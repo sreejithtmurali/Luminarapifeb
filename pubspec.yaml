@@ -37,6 +37,8 @@ dependencies:
   http:
   shared_preferences:
   flutter_native_splash:
+  image_picker: ^1.1.2
+  path_provider:
 
 dev_dependencies:
   flutter_test:

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled3/service/apiservice.dart';
 import 'package:untitled3/service/userservice2.dart';
+import 'package:untitled3/views/addproduct.dart';
 import 'package:untitled3/views/loginview.dart';
 
 import '../Model/allproducts/Data.dart';
@@ -69,7 +70,11 @@ class _HomeState extends State<Home> {
       },),
       
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
+            return Addproduct();
+          }));
+        },
         child: Icon(Icons.add),),
     );
   }
